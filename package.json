@@ -5,6 +5,9 @@
   "repository": "git@github.com:neutonfoo/trojan-autocheck.git",
   "author": "Neuton Foo <neuton.foo@gmail.com>",
   "license": "MIT",
+  "scripts":{
+    "start": "node index.js"
+  },
   "dependencies": {
     "puppeteer": "^10.2.0"
   },
