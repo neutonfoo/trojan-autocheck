@@ -5,7 +5,10 @@ const USC_USERNAME = process.env.USC_USERNAME;
 const USC_PASSWORD = process.env.USC_PASSWORD;
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    // Set the next line to `true` if you want Puppeteer to run in headless mode
+    headless: false,
+  });
   const page = await browser.newPage();
 
   // Trojan Check Main Page
